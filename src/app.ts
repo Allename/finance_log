@@ -1,5 +1,13 @@
 import { Invoice } from "./classes/Invoice.js"
 
+//interface
+interface IsPerson {
+  name: string
+  age: number
+  speak(a: string): void
+  spend(a: number): number
+}
+
 const invOne = new Invoice('Anthony', 'worked on Bluelight website', 120)
 const invTwo = new Invoice('Allename', 'worked on Popu website', 250)
 console.log(invOne, invTwo)
